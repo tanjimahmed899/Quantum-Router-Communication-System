@@ -175,3 +175,14 @@ Switching Mechanism.
 Supporting code and numerical datasets:
 
 https://github.com/tanjimahmed899/Quantum-Router-Communication-System
+
+## Original Quirk Circuit
+
+- `quirk_original_circuit.json`: Original Quirk circuit
+  definition, including custom gate matrices.
+- `quirk_original_url.txt`: Original interactive Quirk URL.
+
+For arbitrary-state testing, the Qiskit reconstruction
+replaces animated input preparation with explicit state
+preparation and independently initializes the routing
+control qubit.
