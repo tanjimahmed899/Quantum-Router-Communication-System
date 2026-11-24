@@ -1,0 +1,55 @@
+{
+  "input_csv": "quirk_ideal_audit_204.csv",
+  "seed": 2026,
+  "qiskit_version": "2.6.2",
+  "aer_version": "0.18.4",
+  "numpy_version": "2.1.1",
+  "logical_gate_counts": {
+    "h": 5,
+    "rz": 1,
+    "unitary": 1,
+    "ccx": 1,
+    "rxx": 1
+  },
+  "depolarizing_lambda": {
+    "ideal": {
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.0
+    },
+    "low_noise": {
+      "1": 0.005,
+      "2": 0.01,
+      "3": 0.02
+    },
+    "higher_noise": {
+      "1": 0.02,
+      "2": 0.04,
+      "3": 0.08
+    }
+  },
+  "model": "logical gate operands; ideal preparation; no measurement errors; no hardware calibration",
+  "results": {
+    "ideal": {
+      "deterministic_mean": 1.000000000000001,
+      "random_mean": 1.0000000000000016,
+      "all_mean": 1.0000000000000013,
+      "min": 1.0000000000000004,
+      "max": 1.0000000000000027
+    },
+    "low_noise": {
+      "deterministic_mean": 0.9688188326146023,
+      "random_mean": 0.96898025405255,
+      "all_mean": 0.9689770889263157,
+      "min": 0.9681783961014975,
+      "max": 0.9694911207246257
+    },
+    "higher_noise": {
+      "deterministic_mean": 0.8842344638064029,
+      "random_mean": 0.8847681664002497,
+      "all_mean": 0.8847577016435073,
+      "min": 0.8821171734592602,
+      "max": 0.8864427432588774
+    }
+  }
+}
