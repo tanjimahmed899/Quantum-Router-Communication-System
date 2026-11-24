@@ -186,3 +186,29 @@ For arbitrary-state testing, the Qiskit reconstruction
 replaces animated input preparation with explicit state
 preparation and independently initializes the routing
 control qubit.
+
+## Analytical Fidelity Visualization
+
+The analytical and simulated unconditional receiver
+fidelities are visualized in Fig. 9.
+
+![Routing Fidelity](fig9_routing_fidelity.png)
+
+The figure is generated directly from the verified
+204-state Qiskit simulation dataset.
+
+### Reproduce the Figure
+
+```bash
+python generate_routing_fidelity_figure.py
+```
+
+Output files:
+
+- `fig9_routing_fidelity.png`: High-resolution figure.
+- `fig9_routing_fidelity.svg`: Vector-format figure.
+- `fig9_routing_fidelity_data.csv`: Numerical plotting data.
+
+The maximum absolute deviation between the simulated
+and analytical fidelities is approximately 2.442e-15.
+
